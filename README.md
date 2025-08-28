@@ -23,6 +23,8 @@ flowchart LR
   B -- OCR --> V[Google Vision / Tesseract.js]
   B -- cache/events --> R[(Redis)]
   B -- notifications --> N[Firebase Cloud Messaging]
+
+
 planned structure
 
 /frontend   # React Native mobile app

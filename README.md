@@ -16,15 +16,15 @@
 **Deployment:** Vercel (frontend), Render/Heroku (backend)  
 
 ## 🗺️ Architecture (planned)
-```mermaid
+
 flowchart LR
-  U[User: React Native App] -- API Calls --> B[Backend: FastAPI]
-  B -- SQL --> D[(PostgreSQL)]
-  B -- OCR --> V[Google Vision / Tesseract.js]
-  B -- cache/events --> R[(Redis)]
-  B -- notifications --> N[Firebase Cloud Messaging]
+  U[User: React Native App] -->|API calls| B[Backend: FastAPI]
+  B -->|SQL| D[(PostgreSQL)]
+  B -->|OCR| V[Google Vision / Tesseract.js]
+  B -->|cache/events| R[(Redis)]
+  B -->|notifications| N[Firebase Cloud Messaging]
 
-
+  
 planned structure
 
 /frontend   # React Native mobile app
